@@ -1,19 +1,44 @@
-# Projeto de Introdução ao desenvolvimento web
+# Introdução Desenvolvimento Web - Catálogo de Filmes com busca
 
-Esse é o projeto de introdução aos fundamentos do desenvolvimento Web. Aqui, vamos praticar a estrutura do que faremos pelo curso todo. O objetivo é construir uma página estilizada, e com **lista** e **busca** utilizando manipulação de DOM, praticando o conteúdo do módulo com JS:
+O objetivo do projeto foi desenvolver uma aplicação web com as características de um catálogo de filmes com a funcionalidade de busca.
 
-- Variáveis
-- Operadores
-- Strings
-- Arrays
-- Objetos
-- Condicionais
-- Laços
-- Funções
-- Funções de Array
-- HTML e CSS
-- Flex e Grid
-- DOM e responsividade
+## 📲 Link do deploy : https://assisefa07.github.io/projeto-intro-web/
+
+
+## 📑 Sobre o projeto
+
+A página consiste em um arquivo HTML (estrutura básica), ligado a um arquivos CSS (estilização), e dois arquivos JS. A escolha por dois arquivos js de deu em função da organização do projeto, em especial, as funcionalidades de busca e criação dinâmica dos objetos ficaram alocados em um arquivo, e funcionalidades estéticas em outro (essencialmente funções ligadas aos botões presentes na página). O objetivo foi criar uma página dinâmica que apresentasse funcionalidades básicas. A página cataloga filmes, possui um sistema simples de busca, que recebe um texto, e procura por nomes/títulos que correspondam a este texto.
+
+## ✍🏻 Funcionalidades
+
+A aplicação conta com as seguintes funcionalidades:
+- criação dinâmica do catálogo 
+- busca por título
+- botões de reload e de escolha de modo de apresentação da página (light / dark) 
+
+## 📆 Implementações futuras e melhorias
+
+Este é um projeto em desenvolvimento e ainda se espera a implementação de melhorias e o incremento de outras funcionalidades, sendo elas:
+
+- melhora no sistema de busca;
+- melhora na apresentação;
+- criação de sistema de inclusão de filmes;
+- criação de acessos diferenciados para usuários e operadores do negócio, entre outras. 
+
+## 🛠 Bibliotecas
+- usou-se apenas vanilla javascript. 
+
+## 🖥 Contribuindo ou testando localmente 
+
+```
+# Clone o repositório 
+
+$ git clone github.com/seu-usuario/repositorio.git
+```
+## Sugestões 🗣
+
+Caso tenha alguma sugestão ou queira reportar algum bug, abra um issue no repositório. Ficarei muito grato com a sua colaboração! 🤝
+
 
 ## Enunciado
 
@@ -43,20 +68,3 @@ A página consiste em um HTML, ligado a um ou mais arquivos CSS, e um ou mais ar
 - [ ]  Utilização de Grid ou Flex para estilizar
 - [ ]  Atenção ao padrão de estilização enviado
 
-### Instruções de entrega
-
-- Faça o fork desse repositório e realize o clone da sua cópia `seu-nome-de-usuario/projeto-intro-web`.
-   <details>
-   <summary>Quer uma dica?</summary>
-   <img src="https://firebasestorage.googleapis.com/v0/b/assets-conteudo.appspot.com/o/gerais%2Ffork.png?alt=media&token=7030e997-246a-41fe-a75f-2a2ced61e54d" alt="Como adicionar o projeto no repositório"/>
-   </details>
-- Crie os arquivos do projeto dentro deste repo;
-- Execute o fluxo de entrega do git. **Lembre-se de abrir os PRs para seu próprio repositório.**
-- Para isso, você precisará fazer o projeto utilizando **branches**. Evite fazer as alterações direto na branch ```main```
-    <details>
-       <summary>Dúvidas sobre o Git & Github?</summary>
-       <p>Adiciomos um vídeo explicando o <strong>processo de entrega</strong> [do fork ao pull request] no Material Assincrono da <a href="https://classroom.google.com/w/NTM0NjA2NDg3MjIx/tc/NTM2NDg5NTQyODg4">A005 - Git e Github</a>. Esse vídeo também exemplifica situações que podem acontecer durante o fluxo de utilização do Git.</p>
-    </details>
-- Entregue o **link do repo** no [Formulário de entrega](https://forms.gle/Q1mXTJFxwVUgUnrZA).
-
-**Opcional**: Tente utilizar o **Github pages** para fazer o deploy do seu projeto.
