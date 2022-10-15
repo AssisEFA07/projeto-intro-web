@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap");
+* {
+  border: 0;
+  font-style: normal;
+}
+
+body {
+  background-color: #e5e8e8;
+  color: #4e545c;
+  margin: 0;
+  font-family: "Quicksand";
+  display: flexbox;
+  /* semana 09 */
+}
+
+body.dark-mode {
+  background-color: #000401;
+  color: #e5e8e8;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: grey;
+  height: 30vh;
+  border-radius: 5px;
+}
+/* pensar melhor */
+header h4 {
+  overflow: hidden;
+  padding: 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header > img {
+  width: 100px;
+  height: 100px;
+}
+
+main {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+#button-mode {
+  height: 25vh;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 20vh;
+}
+
+button {
+  border-radius: 40px;
+  font-size: 1.5rem;
+  height: 60px;
+  width: 200px;
+  border: none;
+  background-color: #4e545c;
+  color: #e5e8e8;
+  transition: all 0.5s linear;
+}
+
+#button-search {
+  border-radius: 40px;
+  font-size: 1.2rem;
+  height: 6vh;
+  min-width: 10vw;
+  border: none;
+  background-color: #4e545c;
+  color: #e5e8e8;
+  margin-top: 8vh;
+}
+
+#searchBar {
+  border-radius: 40px;
+  font-size: 1.2rem;
+  height: 6vh;
+  min-width: 25vw;
+  border: none;
+  background-color: #4e545c;
+  color: #e5e8e8;
+  margin-top: 8vh;
+}
+
+#btnReload {
+  font-size: 1rem;
+  height: 10vh;
+  width: 200px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+button:hover {
+  background-color: #000401;
+}
+
+button.dark-mode {
+  background-color: #e5e8e8;
+  color: #4e545c;
+}
+
+button.dark-mode:hover {
+  background-color: #4e545c;
+  color: #e5e8e8;
+}
+
+section {
+  padding: 2vh;
+  max-width: 40vw;
+  min-height: 20vw;
+  text-align: justify;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+article {
+  padding: 2vh;
+  min-width: 50vw;
+  min-height: 30vw;
+  text-align: justify;
+  background-color: #e5e8e8;
+  color: black;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-radius: 5px;
+}
+
+div {
+  margin-left: 5vw;
+}
+
+img {
+  border-radius: 5%;
+  width: 15vw;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Arial, sans-serif;
+}
+
+p {
+  font-family: Helvetica, sans-serif;
+}
+
+.destaque {
+  color: orangered;
+  text-decoration: none;
+}
+
+section.dark-mode {
+  background-color: #e5e8e8;
+  color: black;
+}
+
+footer {
+  width: 100%;
+  background-color: #4e545c;
+  padding: 16px;
+  color: #e5e8e8;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+footer.dark-mode {
+  background-color: #8d9797;
+  color: #000401;
+}
+
+/*responsividade*/
+
+/* semana 10 */
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* celulares */
+  #inSearch {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #searchBar {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: 10px;
+  }
+
+  #button-search {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 15px;
+  }
+
+  section {
+    padding: 1vh;
+    width: 100%;
+    min-height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  article {
+    padding: 2vh;
+    min-width: 100vw;
+    min-height: 30vw;
+    text-align: justify;
+    background-color: #e5e8e8;
+    color: black;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    border-radius: 5px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+
+  img {
+    border-radius: 5%;
+    width: 280px;
+  }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+  /* tablets */
+
+  section {
+    padding: 1vh;
+    width: 100%;
+    min-height: 20vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    color: black;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  article {
+    padding: 1vh;
+    min-width: 80vw;
+    min-height: 30vw;
+    text-align: justify;
+    background-color: #e5e8e8;
+    color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+  }
+
+  img {
+    border-radius: 5%;
+    min-width: 280px;
+  }
+}
+
+@media screen and (min-device-width: 801px) {
+  /* computadores - é o padrão */
+}

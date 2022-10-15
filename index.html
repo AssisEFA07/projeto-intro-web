@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\CSS\style.css" />
+    <script src="assets\JAVASCRIPT\script.js" defer></script>
+    <script src="assets\JAVASCRIPT\script2.js" defer></script> 
+    <title>24 FRAMES</title>
+</head>
+<body>
+    <header> 
+        <img src="./assets/img/logo.jpg" alt="logo" onclick="reloadPage()">
+        <section>
+            <h1 onclick="reloadPage()"> 24 FRAMES </h1>
+            <h4>Onde o cinema acontece e você vê!</h4>
+        </section>
+    </header>
+
+    <main>
+        <div id='inSearch'>
+            <form>
+               <input id="searchBar" type="search" name="search-bar" placeholder="&nbsp Pesquise aqui seu filme!  &nbsp &nbsp &nbsp &nbsp &nbsp &#128269">
+               <button type="button" id="button-search" onclick="buscarFilme()">Buscar</button>
+            </form>
+        </div>
+        
+        <div id="container">
+            
+        </div>
+        
+        
+        <div id="button-mode">
+            <button type="button" id="btnReload" onclick="reloadPage()">Veja nosso Catálogo</button>
+            <h3 id="page-title">Light Mode ON</h3>
+            <button aria-label="selecionar-modo" id="mode-selector">Dark Mode</button>
+        </div>
+    </main>
+
+    <footer>
+        Emerson Assis &nbsp &nbsp   Projeto Labenu 2022 IntroWeb &nbsp &nbsp     https://github.com/AssisEFA07 
+    </footer>
+    
+</body>
+</html>
+
+
+<!-- documentação básica -->
+<!-- https://coda.io/d/Projeto-Integrador_duQBJ-J3TJr/Semana-1_sug0e#_luXOg -->
+<!-- objetivo da página : apresentar lista de fimes com seus dados de catálogo -->
